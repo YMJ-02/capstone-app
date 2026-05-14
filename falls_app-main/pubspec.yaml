@@ -1,0 +1,49 @@
+name: falls_app
+description: 낙상 감지 IoT 모바일 앱
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 상태 관리
+  flutter_riverpod: ^2.5.1
+
+  # ★ WebSocket (mqtt_client 대신 사용 — Flutter Web 호환)
+  web_socket_channel: ^2.4.0
+
+  # 차트
+  fl_chart: ^0.68.0
+
+  # 로컬 저장소
+  hive_flutter: ^1.1.0
+
+  # 전화 걸기
+  url_launcher: ^6.3.0
+
+  # 날짜 포맷
+  intl: ^0.19.0
+
+  # 영상 재생
+  video_player: ^2.8.6
+  chewie: ^1.8.5
+
+  # 네트워크 상태
+  connectivity_plus: ^6.0.3
+
+  # 실시간 스트림 (WebView)
+  webview_flutter: ^4.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
